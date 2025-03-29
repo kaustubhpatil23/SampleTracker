@@ -1,0 +1,305 @@
+.tracking-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tracking-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.captcha-display {
+  font-family: monospace;
+  letter-spacing: 3px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.track-button {
+  height: 38px;
+  white-space: nowrap;
+}
+
+
+.tracking-results {
+  margin-top: 20px;
+}
+
+/* Details Sections */
+.details-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: #0d6efd;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #e9ecef;
+}
+
+.detail-icon {
+  margin-right: 10px;
+  color: #6c757d;
+  min-width: 16px;
+}
+
+.detail-label {
+  font-weight: 600;
+  min-width: 120px;
+  color: #495057;
+  margin-right: 10px;
+}
+
+.detail-value {
+  color: #212529;
+  flex-grow: 1;
+}
+
+/* Status indicators */
+.status-delivered {
+  color: #28a745;
+}
+
+.status-in-transit {
+  color: #17a2b8;
+}
+
+.status-pending {
+  color: #ffc107;
+}
+
+.status-cancelled {
+  color: #dc3545;
+}
+
+/* Timeline Styles */
+.timeline-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 15px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+.timeline-content {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tracking-container {
+    padding: 15px;
+  }
+  
+  .details-section {
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    flex-wrap: wrap;
+  }
+  
+  .detail-label {
+    min-width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .track-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* TrackingForm.css */
+.tracking-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tracking-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tracking Results Section */
+/* Tracking Details Color Scheme */ 
+.tracking-results .card-header {
+  background: linear-gradient(135deg,#183B4E 0%, #0f2981 100%);
+  color: white;
+}
+
+/* Shipment Details Section */
+.details-section:nth-child(1) {
+  border-left: 4px solid #3b82f6;
+  background: linear-gradient(to right, #f8fafc 0%, white 50%);
+}
+
+.details-section:nth-child(1) .section-title {
+  color: #2563eb;
+  border-bottom: 2px solid #dbeafe;
+}
+
+.details-section:nth-child(1) .detail-icon {
+  color: #60a5fa;
+}
+
+/* Delivery Status Section */
+.details-section:nth-child(2) {
+  border-left: 4px solid #10b981;
+  background: linear-gradient(to right, #f0fdf4 0%, white 50%);
+}
+
+.details-section:nth-child(2) .section-title {
+  color: #059669;
+  border-bottom: 2px solid #d1fae5;
+}
+
+.details-section:nth-child(2) .detail-icon {
+  color: #34d399;
+}
+
+/* Timeline Section */
+.timeline-container {
+  border-top: 2px solid #e2e8f0;
+  padding-top: 20px;
+}
+
+.timeline-header {
+  color: #334155;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.timeline:before {
+  background: linear-gradient(to bottom, #3b82f6 0%, #10b981 100%);
+}
+
+.timeline-marker {
+  background: linear-gradient(135deg, #183B4E 0%, #0f2981 100%);
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3b82f6;
+}
+
+.timeline-content {
+  background: white;
+  border-left: 3px solid #3b82f6;
+}
+
+.timeline-content:hover {
+  background: #f8fafc;
+  border-left: 3px solid #10b981;
+}
+
+/* Status Indicators with Gradient */
+.status-delivered {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.status-in-transit {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.status-pending {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.status-cancelled {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* Detail Items Hover Effect */
+.detail-item:hover {
+  background: rgba(241, 245, 249, 0.5);
+  border-radius: 6px;
+  transform: translateX(5px);
+  transition: all 0.2s ease;
+}
+
+.detail-item:hover .detail-icon {
+  transform: scale(1.1);
+  color: #2563eb;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .details-section {
+    border-left-width: 3px;
+  }
+  
+  .detail-item:hover {
+    transform: none;
+  }
+}
+
+.track-button {
+  background: linear-gradient(135deg, #183B4E 0%, #0F2981 100%);
+  border: none;
+  color: white;
+  padding: 0px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.track-button:hover {
+  background: linear-gradient(135deg, #0F2981 0%, #183B4E 100%);
+}
+
