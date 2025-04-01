@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
-import TrackingForm from "./components/TrackingForm1";
+import TrackingForm from "./components/TrackingForm2";
 import TrackingDetails from "./components/TrackingDetails";
 import Loader from "./components/Loader";
 import Alert from "./components/Alert";

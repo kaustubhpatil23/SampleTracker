@@ -1,0 +1,116 @@
+.tracking-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tracking-results .card-header {
+  background: linear-gradient(135deg,#183B4E 0%, #0f2981 100%);
+  color: white;
+}
+.track-button {
+  background: linear-gradient(135deg, #183B4E 0%, #0F2981 100%);
+  border: none;
+  color: white;
+  padding: -12px -12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.track-button:hover {
+  background: linear-gradient(135deg, #0F2981 0%, #183B4E 100%);
+}
+
+.tracking-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.captcha-display {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+}
+
+.track-button {
+  min-width: 100px;
+}
+
+.tracking-results {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-steps {
+  position: relative;
+  padding-left: 30px;
+}
+
+.progress-steps::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e9ecef;
+  z-index: 1;
+}
+
+.progress-step {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.step-indicator {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-indicator.active {
+  background-color: #051d41;
+  color: white;
+}
+
+.step-number {
+  font-weight: bold;
+}
+
+.step-icon {
+  font-size: 1.1rem;
+}
+
+.step-details {
+  flex-grow: 1;
+}
+
+.step-status {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.step-meta {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+/* Status colors */
+.status-delivered { color: #198754; }
+.status-in-transit { color: #0dcaf0; }
+.status-at-destination { color: #0d6efd; }
+.status-picked-up { color: #ffc107; }
+.status-accepted { color: #6c757d; }
+.status-booked { color: #212529; }
+.status-softdata-upload { color: #6c757d; }
